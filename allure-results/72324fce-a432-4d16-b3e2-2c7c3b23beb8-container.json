@@ -1,0 +1,1 @@
+{"uuid":"72324fce-a432-4d16-b3e2-2c7c3b23beb8","name":"com.demo.ui.Guru99Tests.setup","children":["37ed7989-655d-43b2-86bb-60ba2854a9be"],"description":"","befores":[{"name":"setup","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1758265931120,"stop":1758265937181}],"afters":[],"start":1758265931120,"stop":1758265937181}
