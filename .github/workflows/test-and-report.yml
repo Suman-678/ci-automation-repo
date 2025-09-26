@@ -42,8 +42,10 @@ jobs:
       
     - name: Run tests
       run: |
-        mvn clean test -Dwebdriver.chrome.driver=/usr/local/bin/chromedriver
+        mvn clean test -Dwebdriver.chrome.driver=/usr/local/bin/chromedriver -Dci.environment=true
       continue-on-error: true
+      env:
+        CI: true
       
     - name: Get Allure history
       uses: actions/checkout@v4
