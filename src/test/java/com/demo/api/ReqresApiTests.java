@@ -20,6 +20,7 @@ public class ReqresApiTests {
     }
 
     @Test(priority = 1)
+    
     public void testGetUsersList() {
         Response response = RestAssured
                 .given()
