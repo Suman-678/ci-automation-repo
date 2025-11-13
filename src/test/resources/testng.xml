@@ -8,7 +8,8 @@
     </listeners>
 
     <!-- API Test Suite -->
-    <test name="API Tests" parallel="methods" thread-count="2">
+    <test name="API Tests" parallel="methods" thread-count="2"> 
+        
         <classes>
             <class name="com.demo.api.ReqresApiTests">
                 <methods>
