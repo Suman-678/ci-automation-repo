@@ -9,7 +9,7 @@ import org.testng.annotations.DataProvider;
 
 public class ReqresApiTests {
 
-    // Base URI for ReqRes API (working endpoints)
+    // Base URI for ReqRes API
     private static final String BASE_URL = "https://reqres.in/api";
     // Alternative API for more comprehensive testing
     private static final String JSON_PLACEHOLDER_URL = "https://jsonplaceholder.typicode.com";
@@ -20,7 +20,7 @@ public class ReqresApiTests {
     }
 
     @Test(priority = 1)
-    
+
     public void testGetUsersList() {
         Response response = RestAssured
                 .given()
@@ -35,10 +35,10 @@ public class ReqresApiTests {
         int totalUsers = response.jsonPath().getInt("size()");
         String firstUserEmail = response.jsonPath().getString("[0].email");
         String firstUserName = response.jsonPath().getString("[0].name");
-        
+
         System.out.println("Total users: " + totalUsers);
         System.out.println("First user: " + firstUserName + " (" + firstUserEmail + ")");
-        
+
         Assert.assertTrue(totalUsers > 0, "Users list should not be empty");
         Assert.assertNotNull(firstUserEmail, "First user should have an email");
         Assert.assertTrue(firstUserEmail.contains("@"), "Email should contain @ symbol");
