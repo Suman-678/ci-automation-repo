@@ -9,7 +9,7 @@ import org.testng.annotations.DataProvider;
 
 public class ReqresApiTests {
 
-    // Base URI for ReqRes API
+    // Base URI for ReqRes API (working endpoint)
     private static final String BASE_URL = "https://reqres.in/api";
     // Alternative API for more comprehensive testing
     private static final String JSON_PLACEHOLDER_URL = "https://jsonplaceholder.typicode.com";
